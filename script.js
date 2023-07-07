@@ -57,13 +57,14 @@ function endQuiz(){
     document.getElementById("score-container").style.display = "block";
     document.getElementById("final-score").innerText = score;
 
-    const backBtn = document.getElementById("back-btn");
-    backBtn.addEventListener('click',()=>{
-        const a = document.createElement('a');
-        a.innerText = "Go Back";
-        a.href = "./index.html";
-        backBtn.append(a);
-    });
+    // const backBtn = document.getElementById("back-btn");
+    // backBtn.addEventListener('click',()=>{
+    //     const a = document.createElement('a');
+    //     a.innerText = "Go Back";
+    //     a.class = "anchortag";
+    //     a.href = "./index.html";
+    //     backBtn.append(a);
+    // });
 const highScore = Math.max(...highScores.map((item) => item.score), score);
 document.getElementById("final-high-score").innerText = highScore;
 highScores.push({
